@@ -54,6 +54,7 @@ BuildRequires:	cmake(Qt6Concurrent)
 BuildRequires:	cmake(Qt6PrintSupport)
 BuildRequires:	cmake(Qt6Quick3D)
 BuildRequires:	cmake(Qt6Quick3DRuntimeRender)
+BuildRequires:	cmake(Qt6Quick3DUtils)
 BuildRequires:	qt6-qtdeclarative
 BuildRequires:	cmake(Qt6ShaderTools) >= %{version}-0
 
