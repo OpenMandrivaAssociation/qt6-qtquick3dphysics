@@ -10,7 +10,7 @@
 #define beta rc
 
 Name:		qt6-qtquick3dphysics
-Version:	6.4.0
+Version:	6.4.1
 Release:	%{?beta:0.%{beta}.1}%{?snapshot:1.%{snapshot}.}1
 %if 0%{?snapshot:1}
 # "git archive"-d from "dev" branch of git://code.qt.io/qt/qtquick3dphysics.git
@@ -73,7 +73,8 @@ Qt %{qtmajor} 3D library
 %dir %{_qtdir}/qml/QtQuick3D/Physics \
 %{_qtdir}/qml/QtQuick3D/Physics/libqquick3dphysicsplugin.so \
 %{_qtdir}/qml/QtQuick3D/Physics/plugins.qmltypes \
-%{_qtdir}/qml/QtQuick3D/Physics/qmldir
+%{_qtdir}/qml/QtQuick3D/Physics/qmldir \
+%{_qtdir}/bin/cooker
 
 %global extra_devel_files_Quick3DPhysics \
 %{_qtdir}/lib/cmake/Qt6Qml/QmlPlugins/Qt6qquick3dphysicsplugin*.cmake
