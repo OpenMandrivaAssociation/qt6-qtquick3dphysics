@@ -1,4 +1,4 @@
-# As of 6.4.0-beta3, clang 15.0.0-20220825, enabling LTO results in
+# As of 6.6.0-beta2, clang 16.0.6, enabling LTO results in
 # a link time failure
 # fragment is larger than or outside of variable
 #   call void @llvm.dbg.declare(metadata ptr undef, metadata !901812, metadata !DIExpression(DW_OP_LLVM_fragment, 384, 96)), !dbg !901860
@@ -6,7 +6,7 @@
 # fragment is larger than or outside of variable
 #   call void @llvm.dbg.value(metadata float 0.000000e+00, metadata !901812, metadata !DIExpression(DW_OP_LLVM_fragment, 480, 32)), !dbg !901858
 # !901812 = !DILocalVariable(name: "rayParams", scope: !901793, file: !106324, line: 1425, type: !106827)
-#global _disable_lto 1
+%global _disable_lto 1
 %define beta beta2
 
 Name:		qt6-qtquick3dphysics
