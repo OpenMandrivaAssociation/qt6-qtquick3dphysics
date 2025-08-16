@@ -7,10 +7,10 @@
 #   call void @llvm.dbg.value(metadata float 0.000000e+00, metadata !901812, metadata !DIExpression(DW_OP_LLVM_fragment, 480, 32)), !dbg !901858
 # !901812 = !DILocalVariable(name: "rayParams", scope: !901793, file: !106324, line: 1425, type: !106827)
 %global _disable_lto 1
-#define beta rc
+%define beta beta2
 
 Name:		qt6-qtquick3dphysics
-Version:	6.9.1
+Version:	6.10.0
 Release:	%{?beta:0.%{beta}.}%{?snapshot:0.%{snapshot}.}1
 %if 0%{?snapshot:1}
 # "git archive"-d from "dev" branch of git://code.qt.io/qt/qtquick3dphysics.git
